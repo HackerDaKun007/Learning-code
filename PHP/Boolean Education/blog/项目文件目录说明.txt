@@ -1,0 +1,10 @@
+css     #放置css文件
+js      #放置js文件
+images  #放置图片
+lib     #底层库文件
+log     #系统日志
+upload  #上传文件
+view    #模板目录
+    view/front
+    view/admin
+index.php   #用户直接访问的php文件
