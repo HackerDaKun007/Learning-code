@@ -8,3 +8,5 @@ view    #模板目录
     view/front
     view/admin
 index.php   #用户直接访问的php文件
+
+
