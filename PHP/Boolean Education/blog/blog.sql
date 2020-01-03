@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.0.0-rc1
 -- https://www.phpmyadmin.net/
 --
 -- 主机： localhost
--- 生成日期： 2019-12-15 22:07:34
--- 服务器版本： 5.7.26
--- PHP 版本： 7.3.4
+-- 生成日期： 2020-01-03 10:02:24
+-- 服务器版本： 5.7.28
+-- PHP 版本： 7.3.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -50,6 +50,19 @@ CREATE TABLE `cat` (
   `carname` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
   `num` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- 转存表中的数据 `cat`
+--
+
+INSERT INTO `cat` (`cart_id`, `carname`, `num`) VALUES
+(4, 'test002', 1),
+(5, 'test003', 1),
+(6, 'test004', 1),
+(7, 'test006', 1),
+(8, 'test008', 1),
+(9, 'test009', 1),
+(10, 'test00022', 1);
 
 -- --------------------------------------------------------
 
@@ -138,7 +151,7 @@ ALTER TABLE `art`
 -- 使用表AUTO_INCREMENT `cat`
 --
 ALTER TABLE `cat`
-  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- 使用表AUTO_INCREMENT `comment`
@@ -162,3 +175,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
