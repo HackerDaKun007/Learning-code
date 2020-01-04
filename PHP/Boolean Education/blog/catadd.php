@@ -12,9 +12,8 @@ if(empty($data)){
     }
     //检查栏目是否存在,查询返回只是否为0，存在就返回当前同样的名的长度
     $sql = "select count(*) from cat where carname='$data[catname]'";
-    $rs = mysqlQuery($conn,$sql);
-    $carname = mysqli_fetch_row($rs);
-    if($carname[0] > 0){
+    $rs = mysqlCount($conn,$sql);
+    if($rs > 0){
         frontEndBack('栏目名称已存在');
     }
 
